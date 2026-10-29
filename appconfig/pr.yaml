@@ -1,0 +1,19 @@
+---
+environment: production
+environmentCode: snd
+container:
+  azureStorageAccountName: snd2ffcaphwst2001
+  ddiApiBaseUrl: http://aphw-ddi-api.aphw-ddi-snd2
+  ddiEventsBaseUrl: http://aphw-ddi-events.aphw-ddi-snd2
+  messageQueueHost: SNDFFCINFSB2001.servicebus.windows.net
+  osPlacesBaseUrl: https://api.os.uk/search/places/v1
+  policeApiBaseUrl: https://data.police.uk/api
+  redisHostname: SNDFFCINFRD2001.redis.cache.windows.net
+  redisPort: 6380
+  certificateRequestQueue: queue:aphw-ddi-certificate-request
+azureAppRegistration:
+  clientId: 58d266ac-4cbe-4764-a260-09e3017fc98b
+  tenantId: c9d74090-b4e6-4b04-981d-e6757a160812
+ingress:
+  server: azure.defra.cloud
+  endpoint: aphw-ddi-portal-snd
